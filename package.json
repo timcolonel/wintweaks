@@ -1,0 +1,9 @@
+{
+    "name": "WinTweaks",
+    "main": "views/index.html",
+    "window": {
+        "toolbar": true,
+        "width": 1200,
+        "height": 650
+    }
+}
