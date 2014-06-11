@@ -7,9 +7,10 @@
         "height": 650
     }, 
     "dependencies" : { 
-    	"coffee-script" : "",
-    	"eco" : "",
-        "windows" : ""
+    	"coffee-script" : "*",
+    	"eco" : "*",
+        "windows" : "*",
+        "stylus" : "*"
     } 
     
 }
