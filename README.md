@@ -4,5 +4,5 @@ Inteface to add features tu windows
 
 Planned features
 * Add programs to context menu
-* Edit windowns path(list)
+* Manage windows path
 * More stuff using registry
