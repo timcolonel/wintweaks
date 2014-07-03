@@ -2,8 +2,11 @@ jade = require('jade')
 fs = require('fs')
 stylus = require('stylus')
 
+render = (filename, params={}) ->
+  console.log('redner')
+
 #Render a jade template
-render = (filename, params = {}) ->
+render_jade = (filename, params = {}) ->
   template = fs.readFileSync(filename, 'utf-8')
   fn = jade.compile(template)
   fn(params)
