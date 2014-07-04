@@ -2,6 +2,10 @@ jade = require('jade')
 fs = require('fs')
 stylus = require('stylus')
 
+filename_renders ={
+  fade: render_jade,
+  stylus: render_stylus
+}
 render = (filename, params={}) ->
   console.log('redner')
 
