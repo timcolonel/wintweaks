@@ -2,12 +2,20 @@ jade = require('jade')
 fs = require('fs')
 stylus = require('stylus')
 
-filename_renders ={
-  fade: render_jade,
+renderers ={
+  jade: render_jade,
   stylus: render_stylus
 }
+
+file_types = {
+  coffee: 'coffee',
+  jade: 'jade',
+  styl: 'stylus'
+}
 render = (filename, params={}) ->
-  console.log('redner')
+  extension = filename.split('.').pop()
+  file_type = file_types[extension]
+  renderers[file_type]()
 
 #Render a jade template
 render_jade = (filename, params = {}) ->
