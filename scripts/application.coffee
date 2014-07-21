@@ -2,7 +2,7 @@ jade = require('jade')
 fs = require('fs')
 stylus = require('stylus')
 
-renderers ={
+renderers = {
   jade: render_jade,
   stylus: render_stylus
 }
